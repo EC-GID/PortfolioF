@@ -1,0 +1,43 @@
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form (ngSubmit)="sendMessage()" #contactForm="ngForm" novalidate>
+    <label for="name">Your Name</label>
+    <input
+      id="name"
+      type="text"
+      name="name"
+      [(ngModel)]="name"
+      placeholder="Enter your name"
+      required
+      #nameInput="ngModel"
+      [class.invalid]="nameInput.invalid && nameInput.touched"
+    />
+
+    <label for="email">Your Email</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      [(ngModel)]="email"
+      placeholder="Enter your email"
+      required
+      #emailInput="ngModel"
+      [class.invalid]="emailInput.invalid && emailInput.touched"
+    />
+
+    <label for="message">Your Message</label>
+    <textarea
+      id="message"
+      name="message"
+      [(ngModel)]="message"
+      placeholder="Write your message here..."
+      required
+      rows="5"
+      #messageInput="ngModel"
+      [class.invalid]="messageInput.invalid && messageInput.touched"
+    ></textarea>
+
+    <button type="submit" [disabled]="!contactForm.form.valid">Send</button>
+  </form>
+  <p class="status-message">{{status}}</p>
+</section>

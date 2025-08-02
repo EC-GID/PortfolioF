@@ -1,0 +1,54 @@
+#projects {
+  background-color: #f9fafb;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 2px solid #e5e7eb;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1e3a8a;
+}
+
+.project {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  font-size: 1.8rem;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 15px;
+}
+
+.project a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1d4ed8;
+  font-weight: 600;
+  background-color: #e0f2fe;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.project a:hover {
+  background-color: #bfdbfe;
+}
