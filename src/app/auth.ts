@@ -6,10 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class Auth {
-
   constructor(private http: HttpClient) {}
 
   sendContactMessage(data: any): Observable<any> {
-    return this.http.post('portfolio-production-bd5a.up.railway.app/send-email', data);
+    return this.http.post('https://portfolio-production-bd5a.up.railway.app/send-email', data);
   }
 }
